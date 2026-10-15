@@ -52,7 +52,40 @@ export function LangToggle() {
   );
 }
 
-export const TYPES = ['tractor', 'harvester', 'seed_drill', 'sprayer', 'rotavator', 'thresher'];
+export const TYPES = [
+  'tractor', 'harvester', 'seed_drill', 'sprayer', 'rotavator', 'thresher',
+  'water_pump', 'cultivator', 'fertiliser_spreader', 'manure_spreader',
+  'khurpi', 'knapsack_sprayer', 'drone_sprayer', 'hoe', 'spade', 'digging_rod',
+  'mouldboard_plough', 'disc_plough',
+];
+
+export const MACHINE_OPTIONS = [
+  'tractor', 'harvester', 'seed_drill', 'sprayer', 'rotavator',
+  'water_pump', 'cultivator', 'fertiliser_spreader', 'manure_spreader',
+  'khurpi', 'knapsack_sprayer', 'drone_sprayer', 'hoe', 'spade', 'digging_rod',
+  'mouldboard_plough', 'disc_plough', 'thresher',
+];
+
+export const MACHINE_PHOTO = {
+  tractor: '/machines/tractor.png',
+  harvester: '/machines/harvester.png',
+  seed_drill: '/machines/seed_drill.png',
+  sprayer: '/machines/sprayer.png',
+  rotavator: '/machines/rotavator.png',
+  thresher: '/machines/thresher.svg',
+  water_pump: '/machines/water_pump.png',
+  cultivator: '/machines/cultivator.png',
+  fertiliser_spreader: '/machines/fertiliser_spreader.png',
+  manure_spreader: '/machines/manure_spreader.png',
+  khurpi: '/machines/khurpi.png',
+  knapsack_sprayer: '/machines/knapsack_sprayer.png',
+  drone_sprayer: '/machines/drone_sprayer.png',
+  hoe: '/machines/hoe.png',
+  spade: '/machines/spade.png',
+  digging_rod: '/machines/digging_rod.png',
+  mouldboard_plough: '/machines/mouldboard_plough.png',
+  disc_plough: '/machines/disc_plough.png',
+};
 
 export const TYPE_COLOR = {
   tractor: '#1B6CA8',

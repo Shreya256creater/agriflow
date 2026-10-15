@@ -7,6 +7,7 @@ import ListMachine from './pages/ListMachine';
 import Login from './pages/Login';
 import Notifications from './pages/Notifications';
 import Profile from './pages/Profile';
+import Providers from './pages/Providers';
 import Rent from './pages/Rent';
 import Requests from './pages/Requests';
 import Signup from './pages/Signup';
@@ -24,6 +25,7 @@ export default function App() {
     <Routes>
       <Route element={<SiteChrome />}>
         <Route path="/" element={<Catalog />} />
+        <Route path="/providers/:type" element={<Providers />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route element={<NeedAuth />}>

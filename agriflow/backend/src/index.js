@@ -7,9 +7,8 @@ import { fileURLToPath } from 'url';
 import { seedIfEmpty } from './seed.js';
 import { registerRoutes } from './routes.js';
 
-dotenv.config({ path: path.join(__dirname, '..', '.env') });
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
 const PORT = Number(process.env.PORT) || 4000;
 
 seedIfEmpty();

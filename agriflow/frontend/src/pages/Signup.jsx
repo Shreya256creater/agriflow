@@ -56,14 +56,24 @@ export default function Signup() {
           t={t}
           onChange={(place) => setForm((current) => ({ ...current, ...place }))}
         />
-        <fieldset className="grid gap-2">
-          <legend className="label">{t('role')}</legend>
+        <div className="relative grid grid-cols-3 rounded-full bg-[#E7F1FA] p-1" role="group" aria-label={t('farmer')}>
+          <span
+            aria-hidden="true"
+            className="absolute bottom-1 left-1 top-1 rounded-full bg-gold shadow transition-transform duration-200"
+            style={{ width: 'calc((100% - 0.5rem) / 3)', transform: `translateX(${['farmer', 'owner', 'cooperative'].indexOf(form.role) * 100}%)` }}
+          />
           {['farmer', 'owner', 'cooperative'].map((role) => (
-            <button key={role} type="button" className={form.role === role ? 'btn-primary' : 'btn-ghost'} onClick={() => setForm({ ...form, role })}>
+            <button
+              key={role}
+              type="button"
+              aria-pressed={form.role === role}
+              className="relative z-10 min-h-14 px-1 text-center text-sm font-extrabold leading-tight text-navy"
+              onClick={() => setForm({ ...form, role })}
+            >
               {t(role)}
             </button>
           ))}
-        </fieldset>
+        </div>
         <button
           type="button"
           className="btn-ghost"

@@ -5,6 +5,18 @@ export const CATALOG = {
   sprayer: { buy: 55000, typical: 1500 },
   rotavator: { buy: 110000, typical: 2500 },
   thresher: { buy: 140000, typical: 3000 },
+  water_pump: { buy: 25000, typical: 800 },
+  cultivator: { buy: 80000, typical: 1800 },
+  fertiliser_spreader: { buy: 70000, typical: 1500 },
+  manure_spreader: { buy: 180000, typical: 3000 },
+  khurpi: { buy: 200, typical: 20 },
+  knapsack_sprayer: { buy: 2500, typical: 150 },
+  drone_sprayer: { buy: 400000, typical: 4000 },
+  hoe: { buy: 400, typical: 30 },
+  spade: { buy: 500, typical: 30 },
+  digging_rod: { buy: 800, typical: 40 },
+  mouldboard_plough: { buy: 45000, typical: 1200 },
+  disc_plough: { buy: 70000, typical: 1500 },
 };
 
 export const PRESETS = [
